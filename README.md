@@ -216,7 +216,7 @@ HAVING COUNT(issued_id) > 1
 ```
 
 
-- **Task 6: Generate Query Showing Each Book and Total Rental Count**
+**Task 6: Generate Query Showing Each Book and Total Rental Count**
 
 ```sql
 SELECT b.isbn, b.book_title, COUNT(ist.issued_id) AS issue_count
