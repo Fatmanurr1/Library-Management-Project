@@ -1,6 +1,6 @@
 -- Library Management Project 2
---CREATE DATABASE library_project_2
-USE library_project_2
+CREATE DATABASE library_project_2
+
 -- Creating Branch Table
 
 DROP TABLE IF EXISTS Branch
