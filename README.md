@@ -231,7 +231,7 @@ GROUP BY b.isbn, b.book_title
 
 The following SQL queries were used to address specific questions:
 
-Task 7. **Retrieve All Books in a Specific Category**:
+**Task 7: Retrieve All Books in a Specific Category**:
 
 ```sql
 SELECT *
@@ -239,7 +239,7 @@ FROM Books
 WHERE category = 'Classic'
 ```
 
-8. **Task 8: Find Total Rental Income by Category**:
+**Task 8: Find Total Rental Income by Category**:
 
 ```sql
 SELECT 
@@ -252,15 +252,15 @@ ON b.isbn = ist.issued_book_isbn
 GROUP BY category
 ```
 
-9. **List Members Who Registered in the Last 300 Days**:
-```sql
+**Task 9: List Members Who Registered in the Last 300 Days**:
 
+```sql
 SELECT *
 FROM Members
 WHERE reg_date >= DATEADD(DAY, -300, GETDATE())
 ```
 
-10. **List Employees with Their Branch Manager's Name and their branch details**:
+**Task 10: List Employees with Their Branch Manager's Name and their branch details**:
 
 ```sql
 SELECT
@@ -278,14 +278,14 @@ JOIN Employees AS e2
 ON e2.emp_id = b.manager_id
 ```
 
-Task 11. **List Books with Rental Price Above Threshold**:
+**Task 11: List Books with Rental Price Above Threshold**:
 ```sql
 SELECT *
 FROM Books
 WHERE rental_price > 10
 ```
 
-Task 12: **Retrieve the List of Books Not Yet Returned**
+**Task 12: Retrieve the List of Books Not Yet Returned**
 ```sql
 SELECT *
 FROM [Issued Status] AS ist
