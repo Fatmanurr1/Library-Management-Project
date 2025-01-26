@@ -142,7 +142,6 @@ INSERT INTO [dbo].[Books]
 SELECT *
 FROM [dbo].[books_csv]
 
-
 INSERT INTO [dbo].[Branch]
 SELECT *
 FROM [dbo].[branch_csv]
