@@ -108,6 +108,7 @@ CREATE TABLE [Return Status]
 
 ### 2. Add Constraint
 
+```sql
 ALTER TABLE [Issued Status]
 ADD CONSTRAINT fk_members
 FOREIGN KEY (issued_member_id)
@@ -132,10 +133,11 @@ ALTER TABLE [Return Status]
 ADD CONSTRAINT fk_issued_status
 FOREIGN KEY (issued_id)
 REFERENCES [Issued Status](issued_id)
-
+```
 
 ### 3. Inserting Data
 
+```sql
 INSERT INTO [dbo].[Books]
 SELECT *
 FROM [dbo].[books_csv]
@@ -161,7 +163,7 @@ FROM [dbo].[members_csv]
 INSERT INTO [dbo].[Return Status]
 SELECT *
 FROM [dbo].[return_status_csv]
-
+```
 
 ### 4. CRUD Operations
 
